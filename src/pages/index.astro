@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+// const posts = (await getCollection('blog')).sort(
+//   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+// );
+
+// const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout>
+
+    <div class="pb-12 mt-5">
+      <div class="text-xl py-1">Hey there 👋</div>
+      <div class="text-5xl font-bold">I'm Rizqy Andriansyah</div>
+      <div class="text-3xl py-3 font-bold">Fullstack Web Developer</div>
+      <div class="py-2">
+        <text class="text-lg">
+          Hi, my name is Rizqy Andriansyah and I am a recent graduate from Bootcamp Dumbways looking to start my career in Web Developer. I am a hardworking and enthusiastic individual with a passion for Frontend Developer and also a litle knowledge about Backend Developer. While I may be new to the professional world, I am eager to learn and grow in my field. I believe that my experience when i studying in Bootcamp Dumbways have prepared me well for the challenges of the job and I am excited to bring my skills to the table. I am open to any opportunity that will allow me to apply my knowledge, develop new skills, and contribute to the success of the team. Thank you for taking the time to look at my portofolio.
+          </text
+        >
+      </div>
+      <div class="mt-8">
+        <a class="btn" href="https://www.linkedin.com/in/rizqy-andriansyah/" target="_blank"> Let's connect!</a>
+        <a href="https://github.com/Rizqy-617" target="_blank" class="btn btn-outline ml-5"> My Github</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    </div>
+    
+    <HorizontalCard
+    title="WaysGallery"
+    img="/WaysGallery.png"
+    desc="WaysGallery is a vibrant and dynamic online platform that celebrates creativity in all its forms. It is a community of artists, designers, photographers, and other creative professionals who showcase their work and connect with like-minded individuals from around the world. WaysGallery provides a space for individuals to share their portfolios, projects, and ideas with a wider audience, allowing them to gain recognition and exposure for their talents."
+    url="#"
+    badge="NEW"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+      title="Housy"
+      img="/Housy.png"
+      desc="Housy is the go-to destination for all your rental housing needs. We offer a wide range of rental homes, from cozy apartments to spacious villas, to suit every budget and preference. Our user-friendly website allows you to easily search for properties in your desired location, and view high-quality photos and detailed information. With Housy, finding your perfect home has never been easier."
+      url="#"
+    />
+    <div class="divider my-0"></div>
+
+
+    <!-- <div>
+      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    </div> -->
+
+    <!-- {
+      last_posts.map((post) => (
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + post.slug}
+          target="_self"
+        />
+        <div class="divider my-0"></div>
+      ))
+    } -->
+
+</BaseLayout>

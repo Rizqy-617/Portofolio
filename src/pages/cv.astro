@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title = "Resume">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    I am passionate web developer who has completed several web development projects as part of my career and personal pursuits. I have experience working with HTML, CSS, JavaScript, React JS and also some Backend Work with GOLANG as well as Database like PostgreSQL and MySQL.
+    I am always eager to learn and improve my skills in web development, and I have a strong commitment to creating functional and visually appealing websites that meet the needs of clients and users. I am also comfortable working in a team environment.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Multimedia"
+      subtitle="2019 to 2022 at SMK Al-Mukhtariyah, Garut, Jawa Barat, Indonesia"
+    />
+    <TimeLineElement
+      title="Fullstack Web Developer"
+      subtitle="2022 to 2023 at PT Dumbways Indonesia, Bintaro, Tangerang, Indonesia"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Housy"
+      subtitle="Working Time: Jan 16 - Feb 14"
+      desc="Creating A Renting House Website with Feature like Register & Login, Post House, Edit Profile, and Transaction with Midtrans. Created with React JS, React Bootstrap, Golang, Gorilla Mux, and PostgresSQL"
+    />
+    <TimeLineElement
+      title="WaysGallery"
+      subtitle="Working Time: Feb 15 - Feb 27"
+      desc="Creating A Social Media Website with feature like Register & Login, Create Post, Upload Multiple Image, and Transaction with Midtrans. Created with React JS, Tailwind CSS, Golang, Echo, and MySQL"
+    />
+    <!-- <TimeLineElement
+      title="Full Stack Dev, Software Architect and Project Leader at Integral Oil Drilling System 3.0"
+      subtitle="From 2016 to 2017 at CEDIN, UCI, Habana, Cuba"
+      desc="System of steps of process of perforation of oil wells. Outspread in the direction of Intervención of Wells and various wells of drilling of the Occident of the country. Generate reports and graphs of process of perforation making use of data mining. Technologies: Php,Symfony 2.8 , Gitlab, PostgreSQL, HigthChart, Boostrap 2, JQuery, HTML,CSS, JavaScript"
+    />
+    <TimeLineElement
+      title="Full Stack Dev, UI/UX Designer and Software Architect at Primary Information System"
+      subtitle="From 2017 to 2018 at CEDIN, UCI, Habana, Cuba"
+      desc="System of steps of primary information at a company. personnel's steps, control of access, impression of credentials, steps of locales, structure and composition. Technologies: Php,Symfony 3.3 , Gitlab, PostgreSQL, , Boostrap 3, JQuery, HTML,CSS, JavaScript"
+    /> -->
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://www.efset.org/cert/h6awEu" target="_blank"> EF SET English Certificate 75/100 (C2 Proficient)</a>
+    </li>
+    <!-- <li>
+      <a href="https://certiprof.com/pages/scrum-foundation-professional-certificate-sfpc-en-sp" target="_blank"> Scrum Foundation Professional Certificate (SFPC)</a>
+    </li> -->
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Indonesia (Native)</li>
+    <li>English (C2)</li>
+    <li>JavaScript</li>
+    <li>Postgres SQL</li>
+    <li>MySQL</li>
+    <li>CSS</li>
+    <li>SASS</li>
+    <li>HTML</li>
+    <li>Node.js</li>
+    <li>Astro</li>
+    <li>Bootstrap</li>
+    <li>Tailwind CSS</li>
+    <li>Git</li>
+    <li>Notion</li>
+    <li>Logo Design</li>
+    <li>Image Manipulation</li>
+    <li>Office Suite</li>
+    <li>Adobe Photoshop</li>
+  </ul>
+</BaseLayout>
