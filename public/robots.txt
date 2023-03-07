@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portofolio-rizqy.vercel.app/
+Sitemap: https://portofolio-rizqy-617.vercel.app/
